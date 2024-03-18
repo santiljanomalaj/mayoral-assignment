@@ -1,0 +1,43 @@
+.filterContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.filterSelect {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  max-width: 300px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-size: var(--font-s);
+  padding: 0 var(--space-sm);
+  background-color: var(--color-white);
+  color: var(--color-gray-400);
+  outline: none;
+  cursor: pointer;
+}
+
+.filterOption {
+  color: var(--color-gray-400);
+  font-family: var(--font-primary);
+  cursor: pointer;
+}
+
+.filterLabel {
+  font-size: var(--font-s);
+  font-family: var(--font-primary);
+  white-space: nowrap;
+  color: var(--color-gray-400);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .filterContainer {
+    justify-content: center;
+  }
+}

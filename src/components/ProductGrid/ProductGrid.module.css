@@ -1,0 +1,35 @@
+.gridContainer {
+  --row-height: 1fr;
+  --table-gap: var(--space-md);
+  display: grid;
+  column-gap: var(--table-gap);
+  row-gap: var(--table-gap);
+  grid-auto-rows: var(--row-height);
+}
+
+.gridSizeZoomIn {
+  --grid-columns: 4;
+  --column-width: minmax(0, 1fr);
+  grid-template-columns: repeat(var(--grid-columns), var(--column-width));
+}
+
+.gridSizeZoomOut {
+  --grid-columns: 3;
+  --column-width: minmax(0, 1fr);
+  grid-template-columns: repeat(var(--grid-columns), var(--column-width));
+}
+
+@media screen and (max-width: 768px) {
+  .gridSizeZoomIn {
+    --grid-columns: 3;
+    --column-width: minmax(0, 1fr);
+  }
+
+  .gridSizeZoomOut {
+    --grid-columns: 2;
+    --column-width: minmax(0, 1fr);
+  }
+  .gridContainer {
+    --table-gap: var(--space-sm);
+  }
+}

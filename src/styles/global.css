@@ -1,0 +1,65 @@
+:root {
+  /* Colors*/
+  --color-primary: #0066c3;
+  --color-secondary: #d4e5f4;
+  --color-error: #ff0000;
+  --color-white: #ffffff;
+  --color-gray-100: #ebebeb;
+  --color-gray-200: #dadada;
+  --color-gray-300: #a09f9f;
+  --color-gray-400: #68686b;
+
+  /* Font family */
+
+  --font-primary: 'Maven Pro', sans-serif;
+
+  /* Font sizes*/
+  --text-base-size: 1em;
+  --font-m: 1em;
+  --font-s: 0.9em;
+  --font-xs: 0.75em;
+
+  /* Radius */
+
+  --radius-md: 10px;
+  --radius-sm: 4px;
+
+  /* Spacing */
+
+  --space-unit: var(--text-base-size);
+  --space-xxs: calc(0.25 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+}
+
+/* Resets */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-gray-400);
+  font-family: var(--font-primary);
+  font-size: var(--text-base-size);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.small {
+  font-size: var(--font-s);
+}
+
+/* Breakpoints */
+
+/* Mobile-Tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* Desktop */

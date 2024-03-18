@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: var(--space-xl) var(--space-sm);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: var(--space-md) var(--space-xs);
+  }
+}

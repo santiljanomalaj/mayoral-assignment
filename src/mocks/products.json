@@ -1,0 +1,18 @@
+[
+  {
+    "id": 19,
+    "title": "Testing Product",
+    "price": 15.99,
+    "originalPrice": 15.99,
+    "colors": [],
+    "productImage": "https://testurl.com"
+  },
+  {
+    "id": 21,
+    "title": "Comparing Price Product",
+    "price": 16.99,
+    "originalPrice": 20,
+    "colors": [],
+    "productImage": "https://testurl.com"
+  }
+]
